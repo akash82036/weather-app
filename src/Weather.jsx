@@ -26,7 +26,7 @@ function Weather() {
     try {
       const res = await axios.get(url);
       setData(res.data);
-      setCity(""); // clear input after success
+      setCity("");
     } catch {
       setError("City not found");
     }
